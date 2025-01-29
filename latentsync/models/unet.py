@@ -15,9 +15,9 @@ from diffusers.utils import BaseOutput, logging
 from diffusers.models.embeddings import TimestepEmbedding, Timesteps
 """
 # For model configuration
-from diffusers.configuration_utils import ConfigMixin
+from diffusers.configuration_utils import ConfigMixin, register_to_config
 from diffusers.models.modeling_utils import ModelMixin  # Changed path
-from diffusers.utils.torch_utils import register_to_config  # Moved to torch_utils
+#from diffusers.utils.torch_utils import register_to_config  # Moved to torch_utils
 
 # For UNet model
 from diffusers.models.unet_2d_condition import UNet2DConditionModel  # More specific import
